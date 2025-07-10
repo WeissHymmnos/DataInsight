@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Dashboard</title>
+    <style>
+        table { border-collapse: collapse; width: 50%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Real Estate Dashboard</h1>
+    <p>Average Listing Price: ${{ '%.2f'|format(avg_price) }}</p>
+    <h2>Top 10 Cities by Average Price</h2>
+    <img src="{{ url_for('static', filename='price_by_city.png') }}" alt="Price by City Chart">
+    <table>
+        <tr>
+            <th>City</th>
+            <th>Average Price (USD)</th>
+        </tr>
+        {% for city, price in price_by_city.items() %}
+        <tr>
+            <td>{{ city }}</td>
+            <td>{{ '%.2f'|format(price) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
