@@ -1,7 +1,5 @@
 # Real Estate Dashboard
 
-![Real Estate Dashboard](images/compiler_screenshot.png)
-![Dashboard Result](images/result_screenshot.png)
 
 ## 项目简介
 
