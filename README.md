@@ -24,5 +24,5 @@
 - **工具**: Git (版本控制), 运行于 Linux 环境
 
 
-![Result Screenshot](images/compiler_screenshot.png)
+![Result Screenshot](images/1.png)
 
